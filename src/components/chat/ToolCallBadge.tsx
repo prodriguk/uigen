@@ -1,10 +1,11 @@
 "use client";
 
 import { Loader2 } from "lucide-react";
-import type { ToolInvocation } from "ai";
 
 interface ToolCallBadgeProps {
-  toolInvocation: ToolInvocation;
+  toolName: string;
+  input: Record<string, unknown>;
+  isDone: boolean;
 }
 
 function getBasename(path: string): string {
@@ -40,10 +41,8 @@ function getLabel(toolName: string, args: Record<string, unknown>): string {
   return toolName;
 }
 
-export function ToolCallBadge({ toolInvocation }: ToolCallBadgeProps) {
-  const { toolName, args, state } = toolInvocation;
-  const label = getLabel(toolName, args as Record<string, unknown>);
-  const isDone = state === "result" && "result" in toolInvocation && toolInvocation.result;
+export function ToolCallBadge({ toolName, input, isDone }: ToolCallBadgeProps) {
+  const label = getLabel(toolName, input);
 
   return (
     <div className="inline-flex items-center gap-2 mt-2 px-3 py-1.5 bg-neutral-50 rounded-lg text-xs font-mono border border-neutral-200">

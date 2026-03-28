@@ -11,7 +11,7 @@ import { VirtualFileSystem, FileNode } from "@/lib/file-system";
 
 interface ToolCall {
   toolName: string;
-  args: any;
+  args: any; // maps to `input` in ai v5
 }
 
 interface FileSystemContextType {

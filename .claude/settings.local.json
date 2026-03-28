@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm list:*)",
+      "Bash(npm view:*)",
+      "Bash(npm install:*)",
+      "Bash(npm test:*)",
+      "Bash(npx vitest:*)",
+      "mcp__playwright",
+      "mcp__playwright__browser_navigate",
+      "mcp__playwright__browser_take_screenshot",
+      "mcp__playwright__browser_console_messages",
+      "Bash(node:*)",
+      "Bash(curl -v -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"\"\"messages\"\"\"\":[{\"\"\"\"role\"\"\"\":\"\"\"\"user\"\"\"\",\"\"\"\"parts\"\"\"\":[{\"\"\"\"type\"\"\"\":\"\"\"\"text\"\"\"\",\"\"\"\"text\"\"\"\":\"\"\"\"create a button\"\"\"\"}]}],\"\"\"\"files\"\"\"\":{}}')",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"\"\"messages\"\"\"\":[{\"\"\"\"id\"\"\"\":\"\"\"\"msg1\"\"\"\",\"\"\"\"role\"\"\"\":\"\"\"\"user\"\"\"\",\"\"\"\"parts\"\"\"\":[{\"\"\"\"type\"\"\"\":\"\"\"\"text\"\"\"\",\"\"\"\"text\"\"\"\":\"\"\"\"create a button\"\"\"\"}]}],\"\"\"\"files\"\"\"\":{}}' -w \"\\\\nHTTP Status: %{http_code}\\\\n\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -H \"Accept: text/event-stream\" -d '{\"\"messages\"\":[{\"\"id\"\":\"\"msg1\"\",\"\"role\"\":\"\"user\"\",\"\"parts\"\":[{\"\"type\"\":\"\"text\"\",\"\"text\"\":\"\"create a button\"\"}]}],\"\"files\"\":{}}')",
+      "Bash(curl -v -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"\"\"messages\"\"\"\":[{\"\"\"\"id\"\"\"\":\"\"\"\"msg1\"\"\"\",\"\"\"\"role\"\"\"\":\"\"\"\"user\"\"\"\",\"\"\"\"parts\"\"\"\":[{\"\"\"\"type\"\"\"\":\"\"\"\"text\"\"\"\",\"\"\"\"text\"\"\"\":\"\"\"\"create a button\"\"\"\"}]}],\"\"\"\"files\"\"\"\":{}}')",
+      "Bash(node -e \":*)",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"\"\"messages\"\"\"\":[{\"\"\"\"id\"\"\"\":\"\"\"\"msg1\"\"\"\",\"\"\"\"role\"\"\"\":\"\"\"\"user\"\"\"\",\"\"\"\"parts\"\"\"\":[{\"\"\"\"type\"\"\"\":\"\"\"\"text\"\"\"\",\"\"\"\"text\"\"\"\":\"\"\"\"create a button\"\"\"\"}]}],\"\"\"\"files\"\"\"\":{}}' -w \"\\\\nHTTP: %{http_code}\\\\n\")",
+      "Bash(curl -s -X POST http://localhost:3000/api/chat -H \"Content-Type: application/json\" -d '{\"\"\"\"messages\"\"\"\":[{\"\"\"\"id\"\"\"\":\"\"\"\"msg1\"\"\"\",\"\"\"\"role\"\"\"\":\"\"\"\"user\"\"\"\",\"\"\"\"parts\"\"\"\":[{\"\"\"\"type\"\"\"\":\"\"\"\"text\"\"\"\",\"\"\"\"text\"\"\"\":\"\"\"\"create a pricing card\"\"\"\"}]}],\"\"\"\"files\"\"\"\":{}}')"
+    ]
+  }
+}
