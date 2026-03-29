@@ -57,4 +57,4 @@ jobs:
               }
             }
 
-          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),mcp__playwright__browser_snapshot,mcp__playwright__browser_click"
+          allowed_tools: "Bash(npm:*),Bash(sqlite3:*),Read,Write,Edit,MultiEdit,Glob,Grep,mcp__playwright__browser_snapshot,mcp__playwright__browser_click,mcp__playwright__browser_navigate,mcp__playwright__browser_take_screenshot"
